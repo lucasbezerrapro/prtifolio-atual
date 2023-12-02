@@ -9,11 +9,13 @@
 nav {
   width: 100%;
   height: 60px;
-  background: #4961DC;
+  background: #FFF;
   display: flex;
   box-shadow: 2px 2px 10px #888888;
   justify-content: space-between;
-  padding: 10px;
+  align-items: center;
+  padding: 18px;
+  position: fixed;
 }
 
 h2{
@@ -34,7 +36,7 @@ h2{
 
 #nav-link {
   font-family: 'Montserrat', sans-serif;
-  color: #fff;
+  color: #4961DC;
   text-decoration: none;
 }
 /*
@@ -52,13 +54,30 @@ h1 {
 }
 
 /*sobre*/
-.sobre {
+.jumb {
   width: 100%;
-  height: 700px;
+  height: 660px;
+  background: linear-gradient(45deg, #fff,  #92a3f4, #FFF, #3757f9);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+  margin-bottom: 27px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 110px;
+  box-shadow: 0.3px 0.5px 10px #92a3f4;
+}
+
+@keyframes color {
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
 }
 
 .btn-curriculo {
@@ -87,7 +106,7 @@ h1 {
   align-items: center;
   border-radius: 15px;
   box-shadow: 5px 2px 10px #4961DC;
-  opacity: 1;
+  
 }
 
 .tab{
@@ -96,7 +115,7 @@ h1 {
 }
 
 .code-text{
-  color: #6A98F0;
+  color: #3757f9;
   font-family: 'Montserrat';
 }
 
@@ -109,30 +128,41 @@ h1 {
   width: 100%;
   height: 500px;
 
-  background: gray;
 }
 .card1 {
-  width: 300px;
+  width: 320px;
   height: 300px;
   text-align: center;
   padding: 50px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 2px 16px #4961DC;
 }
 
 .card2 {
-  width: 300px;
+  width: 320px;
   height: 300px;
   text-align: center;
   padding: 50px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 2px 16px #4961DC;
+}
+
+.js{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding-right: 2px;
+  background: #FFF;
+  color: #4961DC;
+
 }
 
 .card3 {
-  width: 300px;
+  width: 320px;
   height: 300px;
   text-align: center;
   padding: 50px;
-  box-shadow: 5px 5px 10px black;
+  box-shadow: 1px 2px 16px #4961DC;
 }
 
 .ilustrado1{
@@ -146,6 +176,8 @@ h1 {
   border-radius: 50%;
   color: #FFF;
   display: flex;
+  margin-top: -22px;
+  margin-bottom: 22px;
   align-items: center;
   justify-content: center;
 }

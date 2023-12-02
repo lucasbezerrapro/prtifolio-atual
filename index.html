@@ -12,18 +12,19 @@
     <!--bootstrap CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
 
-    <title>Portifolio: Lucas Bezerra</title>
+    <title>Portifolio: José Lucas</title>
   </head>
   <body>
     <header>
       <nav>
-        <img  width="60" height="60" src="img/logo.png" alt="">
+        <img style="padding: 6px;
+        margin-top: -10px;" width="90" height="90" src="img/logo.png" alt="">
         <ul id="nav-list">
           <li id="nav-item">
             <a id="nav-link" href="#">Home</a>
           </li>
           <li id="nav-item">
-            <a id="nav-link" href="#">Sobre-mim</a>
+            <a id="nav-link" href="#sobre">Sobre-mim</a>
           </li>
           <li id="nav-item">
             <a href="#" id="nav-link">Projetos</a>
@@ -41,7 +42,7 @@
     <section class="jumb">
       <div class="jumbroton">
         <p style="font-size: 24px; font-family: 'Montserrat', sans-serif; color: rgb(56, 56, 56);">Olá, Sou</p>
-        <h1>Lucas Bezerra</h1>
+        <h1>José Lucas</h1>
         <p style="font-size: 30px; padding-bottom: 30px; font-family: 'Montserrat', sans-serif; color: rgb(56, 56, 56);">DESENVOLVEDOR WEB FRONT-END CRIATIVO</p>
         <a href="#" class="btn-curriculo">Baixar Curriculo</a>
         <div class="btn-redes">
@@ -55,14 +56,14 @@
         <div class="code">
 
           <p class="code-text">
-            1  class <span style="font-weight: bold;">Person</span> { <br><br>
+          1 <span style="padding-left: 8px;"></span>   class <span style="font-weight: bold;">Person</span> { <br><br>
             2      <span
             class="tab">constructor() {<br></span><br>
-            3 <span class="tab">this.name = "<span style="font-weight: bold;">Lucas bezerra</span>";</span><br><br>
+            3 <span class="tab">this.name = "<span style="font-weight: bold;">José Lucas</span>";</span><br><br>
             4<span class="tab">this.traits =["<span style="font-weight: bold;">DESIGN</span>", <span style="font-weight: bold;">"DEV"]</span>; <br></span><br>
             5<span class="tab">this.age = new Date().getFullYear() - 2002;</span><br><br>
             6 <span class="tab">}</span><br><br>
-            7  }
+            7 <span style="padding-left: 8px;"></span>   }
           </p>
 
         </div>
@@ -73,7 +74,7 @@
     </section>
 
     <!--tecnologias e habilidades-->
-    <div style="display: flex; justify-content: center;">
+    <div style="display: flex; justify-content: center;" class="tecnologias">
       <span style="font-weight: bold; font-size: 30px; font-family: 'Montserrat'; color: #4961DC;">Coisas que eu amo</span>
     </div>
     <section class="skils">
@@ -110,5 +111,52 @@
         </div>
       </div>
     </section>
+
+    <!--Sobre mim-->
+    <section class="sobre-mim" id="sobre">
+      <div class="img">
+        <img class="img-perfil" width="250" height="250" src="img/foto.jpg" alt="">
+      </div>
+      <div class="texto-sobre">
+        <div class="texto-sobre-mim">
+          <p>
+          
+            Olá! Eu sou um estudante dedicado de Análise e Desenvolvimento de Sistemas <span style="font-weight: bold;">(ADS)</span> e, além disso, uma pessoa com deficiência <span style="color: #000; ">(PCD)</span>. A minha jornada acadêmica tem sido uma experiência desafiadora. <br><br>
+    
+            Minha escolha pelo curso de Análise e Desenvolvimento de Sistemas reflete meu interesse apaixonado por resolver problemas e criar soluções inovadoras. <br><br> Tenho explorado diversas linguagens de programação, frameworks e conceitos de design, sempre em busca de aprimorar minha compreensão e habilidades práticas.
+          </p>
+        </div>
+      </div>
+      
+      </div>
+
+      <section class="cards-sobre">
+        <div class="card01">
+          <blockquote>
+            &quot;Qualquer um pode escrever um código que o computador entenda. Bons programadores escrevem códigos que os humanos entendam.&quot;
+            <footer style="display: flex;
+            justify-content: end;">Martin Fowler</footer>
+          </blockquote>
+        </div>
+
+        <div class="card02">
+          <blockquote>
+            &quot;Programadores e artistas são os únicos profissionais que tem como hobby a própria profissão.&quot;
+            <footer style="display: flex;
+            justify-content: end;">Rafael Lain</footer>
+          </blockquote>
+        </div>
+
+        <div class="card03">
+          <blockquote>
+            &quot;Saber não é o bastante, devemos aplicar. Disposição não é o suficiente, devemos fazer.&quot;
+            <footer style="display: flex;
+            justify-content: end;">Johann Wolfgang von Goethe</footer>
+          </blockquote>
+        </div>
+      </section>
+    </section>
+
+
   </body>
 </html>

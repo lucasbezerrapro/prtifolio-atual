@@ -6,6 +6,15 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+
+
 nav {
   width: 100%;
   height: 60px;
@@ -16,6 +25,7 @@ nav {
   align-items: center;
   padding: 18px;
   position: fixed;
+  z-index: 1;
 }
 
 h2{
@@ -57,16 +67,20 @@ h1 {
 .jumb {
   width: 100%;
   height: 660px;
-  background: linear-gradient(45deg, #fff,  #92a3f4, #FFF, #3757f9);
+  background: linear-gradient(45deg,#92a3f4, #FFF, #FFF);
   background-size: 300% 300%;
+  /*
   animation: color 12s ease-in-out infinite;
+  */
   margin-bottom: 27px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 110px;
-  box-shadow: 0.3px 0.5px 10px #92a3f4;
+  box-shadow: 5px 6px 10px #C7D0FF;
 }
+
+/*
 
 @keyframes color {
   0%{
@@ -79,13 +93,14 @@ h1 {
     background-position: 0 50%;
   }
 }
-
+*/
 .btn-curriculo {
   text-decoration: none;
   background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
   padding: 11px 27px;
   color: #fff;
   border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .btn-redes{
@@ -105,7 +120,7 @@ h1 {
   justify-content: center;
   align-items: center;
   border-radius: 15px;
-  box-shadow: 5px 2px 10px #4961DC;
+  box-shadow: 5px 5px 10px 0px #4961DC;
   
 }
 
@@ -119,6 +134,9 @@ h1 {
   font-family: 'Montserrat';
 }
 
+.tecnologias{
+  padding: 30px;
+}
 /*skils*/
 .skils{
   display: flex;
@@ -180,4 +198,83 @@ h1 {
   margin-bottom: 22px;
   align-items: center;
   justify-content: center;
+}
+
+.sobre-mim {
+  width: 105%;
+  height: 500px;
+  margin-left: -16px;
+  padding: 30px;
+  z-index: -1;
+  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
+  transform: rotate(-3deg);
+  padding: 70px;
+  
+}
+
+.img {
+  width: 100px;
+  height: 100px;
+}
+
+.img-perfil {
+  border-radius: 50%;
+  background: #FFF;
+  padding: 6px;
+}
+
+.texto-sobre{
+  width: 100%;
+  height: 300px;
+  margin-top: -80px;
+  display: flex;
+  justify-content: center;
+  transform: rotate(363deg) !important; /*deixa o testo reto*/
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+}
+.texto-sobre-mim {
+  width: 900px;
+  height: 700px;
+  margin-left: 200px;
+  color: #FFF;
+}
+
+/*cards do sobre mim*/
+.cards-sobre {
+  width: 98%;
+  height: 550px;
+  transform: rotate(363deg) !important; /*deixa os cards retos*/
+  padding:40px;
+  color: #6D83F2;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.card01 {
+  width: 400px;
+  height: 150px;
+  background: #FFF;
+  padding: 30px;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.card02 {
+  width: 400px;
+  height: 150px;
+  background: #FFF;
+  padding: 30px;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+.card03 {
+  width: 400px;
+  height: 150px;
+  background: #FFF;
+  padding: 30px;
+  border-radius: 9px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
 }

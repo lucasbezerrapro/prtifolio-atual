@@ -49,6 +49,22 @@ h2{
   color: #4961DC;
   text-decoration: none;
 }
+
+.hamburguer {
+  width: 50px;
+  height: 50px;
+  margin: 100px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #6A98F0;
+}
+
+#linha {
+  width: 100%;
+  height: 9px;
+  background: red;
+}
 /*
 p{
   font-family: Montserrat, sans-serif;
@@ -78,6 +94,19 @@ h1 {
   justify-content: space-between;
   padding: 110px;
   box-shadow: 5px 6px 10px #C7D0FF;
+}
+
+.jumb-text {
+  font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(56, 56, 56);
+}
+
+.jumb-text2 {
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(56, 56, 56);
 }
 
 /*
@@ -131,6 +160,7 @@ h1 {
 
 .code-text{
   color: #3757f9;
+  font-size: 17px;
   font-family: 'Montserrat';
 }
 
@@ -277,4 +307,59 @@ h1 {
   padding: 30px;
   border-radius: 9px;
   box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
+}
+
+/*Responsividade*/
+@media screen and (max-width: 544px) {
+  header {
+    display: none;
+  }
+  .jumb {
+    width: 100%;
+    padding: 30px;
+    background: linear-gradient(390deg, #92a3f4,#FFF ,#FFF, #FFF, #FFF);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: -75px;
+    
+
+  }
+
+  .jumbroton {
+    text-align: center;
+    margin-bottom: -150px;
+  }
+  .jumb-text{
+    text-align: center;
+    font-size: 18px;
+  }
+  .jumb-text2{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+
+  .btn-curriculo {
+    margin: 50px;
+  }
+
+  .btn-redes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .me-code {
+    width: 300px;
+    height: 220px;
+  }
+
+  .code-text{
+    font-size: 12px;
+  }
+
 }

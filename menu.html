@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+  <style>
+    #burguer {
+      background: #4961DC;
+      padding: 10px;
+      color: #FFF;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    menu {
+      cursor: pointer;
+    }
+    menu > ul{
+      list-style-type: none;
+      color: #FFF;
+    }
+    li{
+      width: 60px;
+      padding: 8px;
+      background: #4961DC;
+      margin: 9px;
+      padding: 5px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .items {
+      display: none;
+    }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+  <nav>
+    <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+    <menu class="items">
+      <ul>
+        <li>OPCAO1</li>
+        <li>opcao2</li>
+        <li>opcao3</li>
+        <li>opcao4</li>
+      </ul>
+    </menu>
+  </nav>
+
+  <script>
+    function clickMenu(){
+      var items = document.querySelector('.items');
+
+      if (items.style.display === 'none' || items.style.display === '') {
+        document.getElementById("burguer").innerHTML ='close';
+        items.style.display = 'block';
+      } else {
+        document.getElementById("burguer").innerHTML ='menu';
+        items.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>

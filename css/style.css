@@ -81,8 +81,9 @@ h1 {
 
 /*sobre*/
 .jumb {
-  width: 100%;
+  width: 100vw;
   height: 720px;
+  padding: 30px;
   background: linear-gradient(45deg,#92a3f4, #FFF, #FFF);
   background-size: 300% 300%;
   /*
@@ -91,8 +92,7 @@ h1 {
   margin-bottom: 27px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 110px;
+  justify-content: space-around;
   box-shadow: 5px 6px 10px #C7D0FF;
 }
 
@@ -238,11 +238,11 @@ h1 {
   width: 105%;
   height: 500px;
   margin-left: -16px;
-  padding: 30px;
+  padding: 100px;
   z-index: -1;
   background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
   transform: rotate(-3deg);
-  padding: 70px;
+
   
 }
 
@@ -387,12 +387,12 @@ h1 {
 }
 
 /*Responsividade*/
-@media screen and (max-width: 544px) {
+@media screen and (max-width: 737px) {
   header {
     display: none;
   }
   .jumb {
-    width: 100%;
+    width: 110vw;
     padding: 30px;
     background: linear-gradient(390deg, #bfc7f5,#FFF,#FFF);
     display: flex;
@@ -452,6 +452,57 @@ h1 {
   }
   .card2 {
     margin-bottom: 19px;
+  }
+
+  .sobre-mim {
+    width: 105%;
+    height: 1000px;
+    margin-left: -16px;
+    padding: 30px;
+    margin-top: 300px;
+  }
+  .cards-sobre{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: -22px;
+    margin-bottom: 25px;
+  }
+
+  .card01{
+    width: 300px;
+    text-align: start;
+  }
+
+  .card02{
+    width: 300px;
+    text-align: start;
+  }
+
+  .card03{
+    width: 300px;
+    text-align: start;
+  }
+
+  .sobre-mim{
+    width: 113%;
+    margin-left: -25px;
+  }
+
+  .texto-sobre {
+    width: 500px;
+    text-align: center;
+    margin-left: -150px;
+  }
+  .texto-sobre-mim{
+    
+    height: 400px;
+    font-size: 15px;
+    margin-top: 300px;
+    text-align: center;
+  }
+  .img-perfil{
+    margin-left: 60px;
   }
 
 }

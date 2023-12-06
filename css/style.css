@@ -387,19 +387,19 @@ h1 {
 }
 
 /*Responsividade*/
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 687px) {
   header {
     display: none;
   }
   .jumb {
-    width: 110vw;
+    width: 103%;
     padding: 30px;
     background: linear-gradient(390deg, #bfc7f5,#FFF,#FFF);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: -75px;
+    margin-top: -55px;
     
 
   }
@@ -504,5 +504,155 @@ h1 {
   .img-perfil{
     margin-left: 60px;
   }
+
+}
+
+@media  screen and (min-width: 688px) and (max-width: 900px) {
+  .jumb {
+    width: 103%;
+    padding: 30px;
+    background: linear-gradient(390deg, #bfc7f5,#FFF,#FFF);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    
+
+  }
+  header {
+    display: none;
+  }
+
+  
+
+  .jumbroton {
+    text-align: center;
+    margin-bottom: -150px;
+  }
+  .jumb-text{
+    text-align: center;
+    font-size: 18px;
+  }
+  .jumb-text2{
+    font-size: 18px;
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 50px;
+  }
+
+  .btn-curriculo {
+    margin: 50px;
+  }
+
+  .btn-redes {
+    display: flex;
+    justify-content: center;
+  }
+
+  .me-code {
+    width: 400px;
+    height: 320px;
+  }
+
+  .code-text{
+    font-size: 16px;
+  }
+
+   /*coisas que eu amo*/
+
+   .skils {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 210px;
+    padding: 20px;
+  }
+  .card1 {
+    margin-bottom: 19px;
+  }
+  .card2 {
+    margin-bottom: 19px;
+  }
+
+  .sobre-mim {
+    width: 105%;
+    height: 1000px;
+    margin-left: -16px;
+    padding: 30px;
+    margin-top: 300px;
+  }
+  .cards-sobre{
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+    margin-left: -22px;
+  }
+
+  .card01{
+    width: 350px;
+    text-align: start;
+  }
+
+  .card02{
+    width: 350px;
+    text-align: start;
+  }
+
+  .card03{
+    width: 350px;
+    text-align: start;
+  }
+
+  .sobre-mim{
+    width: 113%;
+    margin-left: -25px;
+  }
+
+  .texto-sobre {
+    width: 630px;
+    text-align: center;
+    margin-left: 0;
+  }
+  .texto-sobre-mim{
+    
+    height: 400px;
+    font-size: 20px;
+    margin-top: 250px;
+    margin-left: 91px;
+    text-align: start;
+  }
+  .img-perfil{
+    margin-left: 200px;
+  }
+
+  .projetos {
+    margin-left: -24px;
+  }
+
+
+  
+  .github-stats {
+    width: 650px;
+    height: 400px;
+    margin-left: -28px;
+    margin-bottom: 80px;
+  }
+
+  .github-stats > img {
+    width: 650px;
+    
+  }
+  .aba-projeto1 {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+  }
+
+  .linguagens-icones {
+    display: none;
+  }
+
 
 }

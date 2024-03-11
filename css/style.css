@@ -1,558 +1,186 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Exo+2:ital,wght@0,300;1,200&family=Kalam:wght@300;400;700&family=Lato:ital,wght@0,300;0,400;0,700;1,700&family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600;1,900&family=Roboto+Flex:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
 
+/* Adiciona a fonte Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Reset CSS para remover margens e preenchimentos padrão */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-  scroll-behavior: smooth;
-}
+/* Aplica a fonte Poppins ao corpo do documento */
 body {
-  overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
-
-
-nav {
-  width: 100%;
-  height: 60px;
-  background: #FFF;
-  display: flex;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px;
-  position: fixed;
-  z-index: 1;
-}
-
-h2{
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  color: white;
-  background: black;
-}
-#nav-list{
-  display: flex;
-  list-style: none;
-}
-
-#nav-item {
-  padding: 10px;
-}
-
-#nav-link {
-  font-family: 'Montserrat', sans-serif;
-  color: #4961DC;
-  text-decoration: none;
-}
-
-.hamburguer {
-  width: 50px;
-  height: 50px;
-  margin: 100px;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  background: #6A98F0;
-}
-
-#linha {
-  width: 100%;
-  height: 9px;
-  background: red;
-}
-/*
-p{
-  font-family: Montserrat, sans-serif;
-}*/
-
-
-
-h1 {
-  font-weight: bold;
-  font-size: 60px;
-  color: rgb(56, 56, 56);
-  font-family: 'Montserrat', sans-serif;
-}
-
-/*sobre*/
-.jumb {
-  width: 100vw;
-  height: 720px;
-  padding: 30px;
-  background: linear-gradient(45deg,#92a3f4, #FFF, #FFF);
-  background-size: 300% 300%;
-  /*
-  animation: color 12s ease-in-out infinite;
-  */
-  margin-bottom: 27px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  box-shadow: 5px 6px 10px #C7D0FF;
-}
-
-.jumb-text {
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(56, 56, 56);
-}
-
-.jumb-text2 {
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-family: 'Montserrat', sans-serif;
-  color: rgb(56, 56, 56);
-}
-
-/*
-
-@keyframes color {
-  0%{
-    background-position: 0 50%;
-  }
-  50%{
-    background-position: 100% 50%;
-  }
-  100%{
-    background-position: 0 50%;
-  }
-}
-*/
-.btn-curriculo {
-  text-decoration: none;
-  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
-  padding: 11px 27px;
-  color: #fff;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-}
-
-.btn-redes{
-  color: #6D83F2;
-  font-size: 20px;
-  padding: 20px;
-
-}
-.btn-redes i {
-  padding: 10px;
-}
-
-.me-code{
-  width: 419px;
-  height: 350px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 15px;
-  box-shadow: 5px 5px 10px 0px #4961DC;
-  
-}
-
-.tab{
-  margin-left: 25px;
-  
-}
-
-.code-text{
-  color: #3757f9;
-  font-size: 17px;
-  font-family: 'Montserrat';
-}
-
-.tecnologias{
-  text-align: center;
-  padding: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-/*skils*/
-.skils{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-  width: 100%;
-  height: 500px;
-
-}
-.card1 {
-  width: 320px;
-  height: 300px;
-  text-align: center;
-  padding: 50px;
-  box-shadow: 1px 2px 16px #4961DC;
-}
-
-.card2 {
-  width: 320px;
-  height: 300px;
-  text-align: center;
-  padding: 50px;
-  box-shadow: 1px 2px 16px #4961DC;
-}
-
-.js{
-  width: 35px;
-  height: 35px;
-  display: flex;
-  justify-content: end;
-  align-items: end;
-  padding-right: 2px;
-  background: #FFF;
-  color: #4961DC;
-
-}
-
-.card3 {
-  width: 320px;
-  height: 300px;
-  text-align: center;
-  padding: 50px;
-  box-shadow: 1px 2px 16px #4961DC;
-}
-
-.ilustrado1{
-  display: grid;
-  place-items: center;
-}
-.bolha {
-  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  color: #FFF;
-  display: flex;
-  margin-top: -22px;
-  margin-bottom: 22px;
-  align-items: center;
-  justify-content: center;
-}
-
-.sobre-mim {
-  width: 105%;
-  height: 500px;
-  margin-left: -16px;
-  padding: 100px;
-  z-index: -1;
-  background: linear-gradient(134deg, #6A98F0 0%, #4961DC 99%);
-  transform: rotate(-3deg);
-
-  
-}
-
-.img {
-  width: 100px;
-  height: 100px;
-}
-
-.img-perfil {
-  border-radius: 50%;
-  background: #FFF;
-  padding: 6px;
-}
-
-.texto-sobre{
-  width: 100%;
-  height: 300px;
-  margin-top: -80px;
-  display: flex;
-  justify-content: center;
-  transform: rotate(363deg) !important; /*deixa o testo reto*/
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-}
-.texto-sobre-mim {
-  width: 900px;
-  height: 700px;
-  margin-left: 200px;
-  color: #FFF;
-}
-
-/*cards do sobre mim*/
-.cards-sobre {
-  width: 98%;
-  height: 550px;
-  transform: rotate(363deg) !important; /*deixa os cards retos*/
-  padding:40px;
-  color: #6D83F2;
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
-}
-
-.card01 {
-  width: 400px;
-  height: 150px;
-  background: #FFF;
-  padding: 30px;
-  border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
-}
-
-.card02 {
-  width: 400px;
-  height: 150px;
-  background: #FFF;
-  padding: 30px;
-  border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
-}
-
-.card03 {
-  width: 400px;
-  height: 150px;
-  background: #FFF;
-  padding: 30px;
-  border-radius: 9px;
-  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px;
-}
-
-/*Responsividade*/
-@media screen and (max-width: 687px) {
-  header {
-    display: none;
-  }
-  .jumb {
-    width: 103%;
-    padding: 30px;
-    background: linear-gradient(390deg, #bfc7f5,#FFF,#FFF);
+/* Estilos para o header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: -55px;
-    
+}
 
-  }
+.logo img {
+    height: 40px; /* ajuste conforme necessário */
+}
 
-  .jumbroton {
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Estilos para o jumbotron */
+.jumbotron {
+    background-color: #f0f0f0;
+    padding: 70px 0;
     text-align: center;
-    margin-bottom: -150px;
-  }
-  .jumb-text{
-    text-align: center;
-    font-size: 18px;
-  }
-  .jumb-text2{
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 50px;
-  }
+}
 
-  .btn-curriculo {
-    margin: 50px;
-  }
-
-  .btn-redes {
+.imagem-jumb {
     display: flex;
     justify-content: center;
-  }
-
-  .me-code {
-    width: 300px;
-    height: 220px;
-  }
-
-  .code-text{
-    font-size: 12px;
-  }
-
-  /*coisas que eu amo*/
-
-  .skils {
-    flex-direction: column;
     align-items: center;
-    margin-top: 210px;
+}
+
+.code-text {
     padding: 20px;
-  }
-  .card1 {
-    margin-bottom: 19px;
-  }
-  .card2 {
-    margin-bottom: 19px;
-  }
-
-  .sobre-mim {
-    width: 105%;
-    height: 1000px;
-    margin-left: -16px;
-    padding: 30px;
-    margin-top: 300px;
-  }
-  .cards-sobre{
-    flex-direction: column;
-    align-items: center;
-    margin-top: 300px;
-    margin-left: -22px;
-    margin-bottom: 25px;
-  }
-
-  .card01{
-    width: 300px;
-    text-align: start;
-  }
-
-  .card02{
-    width: 300px;
-    text-align: start;
-  }
-
-  .card03{
-    width: 300px;
-    text-align: start;
-  }
-
-  .sobre-mim{
-    width: 113%;
-    margin-left: -25px;
-  }
-
-  .texto-sobre {
-    width: 500px;
-    text-align: center;
-    margin-left: -150px;
-  }
-  .texto-sobre-mim{
-    
-    height: 400px;
-    font-size: 15px;
-    margin-top: 300px;
-    text-align: center;
-  }
-  .img-perfil{
-    margin-left: 60px;
-  }
-
-}
-
-@media  screen and (min-width: 688px) and (max-width: 700px) {
-  .jumb {
-    width: 103%;
-    padding: 30px;
-    background: linear-gradient(390deg, #bfc7f5,#FFF,#FFF);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0px;
-    
-
-  }
-  header {
-    display: none;
-  }
-
-  
-
-  .jumbroton {
-    text-align: center;
-    margin-bottom: -150px;
-  }
-  .jumb-text{
-    text-align: center;
-    font-size: 18px;
-  }
-  .jumb-text2{
-    font-size: 18px;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 50px;
-  }
-
-  .btn-curriculo {
-    margin: 50px;
-  }
-
-  .btn-redes {
-    display: flex;
-    justify-content: center;
-  }
-
-  .me-code {
-    width: 400px;
-    height: 320px;
-  }
-
-  .code-text{
-    font-size: 16px;
-  }
-
-   /*coisas que eu amo*/
-
-   .skils {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 210px;
-    padding: 20px;
-  }
-  .card1 {
-    margin-bottom: 19px;
-  }
-  .card2 {
-    margin-bottom: 19px;
-  }
-
-  .sobre-mim {
-    width: 105%;
-    height: 1000px;
-    margin-left: -16px;
-    padding: 30px;
-    margin-top: 300px;
-  }
-  .cards-sobre{
-    flex-direction: column;
-    align-items: center;
-    margin-top: 300px;
-    margin-left: -22px;
-  }
-
-  .card01{
-    width: 350px;
-    text-align: start;
-  }
-
-  .card02{
-    width: 350px;
-    text-align: start;
-  }
-
-  .card03{
-    width: 350px;
-    text-align: start;
-  }
-
-  .sobre-mim{
-    width: 113%;
-    margin-left: -25px;
-  }
-
-  .texto-sobre {
-    width: 630px;
-    text-align: center;
-    margin-left: 0;
-  }
-  .texto-sobre-mim{
-    
-    height: 400px;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-    margin-top: 250px;
-    margin-left: 91px;
-    text-align: start;
-  }
-  .img-perfil{
-    margin-left: 200px;
-  }
+    max-width: 50%;
+    margin: 0 auto;
+    text-align: left; /* Alinha o código à esquerda */
+}
 
+.img-jumb img {
+    max-width: 100%;
+    height: auto;
+}
 
+/* Estilos para a seção de projetos */
+.projects {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.project-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    width: 300px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do cartão */
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-card h3 {
+    margin: 20px 0;
+    font-size: 20px;
+    color: #333; /* Cor do título */
+}
+
+.project-card p {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666; /* Cor do texto */
+}
+
+.project-card button {
+    background-color: #007bff; /* Cor do botão */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.project-card button:hover {
+    background-color: #0056b3; /* Cor do botão em hover */
+}
+
+/* Estilos para a seção de contato */
+.contact {
+    background-color: #f0f0f0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #0056b3;
 }

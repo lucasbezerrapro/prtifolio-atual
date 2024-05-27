@@ -97,4 +97,13 @@
         });
     });
 
+    $('#send-button').on('click', function() {
+        const name = $('#name').val();
+        const email = $('#email').val();
+        const message = $('#message').val();
+        const phoneNumber = '55SEUNUMERO'; // Substitua pelo seu número no formato internacional
+
+        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(`Olá! Meu nome é ${name}. Meu email é ${email}. ${message}`)}`;
+        window.open(whatsappURL, '_blank');
+    });
 })(jQuery);
